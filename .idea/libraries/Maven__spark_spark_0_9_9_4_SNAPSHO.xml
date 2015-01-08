@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: spark:spark:0.9.9.4-SNAPSHO">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/spark/spark/0.9.9.4-SNAPSHO/spark-0.9.9.4-SNAPSHO.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/spark/spark/0.9.9.4-SNAPSHO/spark-0.9.9.4-SNAPSHO-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/spark/spark/0.9.9.4-SNAPSHO/spark-0.9.9.4-SNAPSHO-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
