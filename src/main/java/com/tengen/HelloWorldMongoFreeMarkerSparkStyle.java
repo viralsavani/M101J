@@ -21,7 +21,6 @@ public class HelloWorldMongoFreeMarkerSparkStyle {
         configuration.setClassForTemplateLoading(HelloWorldFreeMarkerSparkStyle.class,"/");
 
         MongoClient client = new MongoClient(new ServerAddress("localhost",27017));
-
         DB database = client.getDB("course");
         final DBCollection collection = database.getCollection("things");
 
@@ -41,6 +40,14 @@ public class HelloWorldMongoFreeMarkerSparkStyle {
                     e.printStackTrace();
                 }
                 return writer;
+            }
+        });
+
+        //WildCarding ":anyName" to give more dynamic behaviour to application
+        Spark.get(new Route("/test/:anyName") {
+            @Override
+            public Object handle(Request request, Response response) {
+                return "This is the Any Name passed in URL:: " + request.params(":anyName");
             }
         });
     }

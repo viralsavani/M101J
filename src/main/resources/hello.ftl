@@ -4,6 +4,6 @@
     </head>
 
     <body>
-        <h1 style="background: ${color}">HELLO ${name}</h1>
+        <h1>HELLO ${name}</h1>
     </body>
 </html>
