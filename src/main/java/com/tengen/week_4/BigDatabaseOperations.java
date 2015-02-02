@@ -16,10 +16,14 @@ public class BigDatabaseOperations {
         BasicDBObject query = new BasicDBObject("a", 77);
         query.append("b", 9);
 
-        DBObject doc = collection.find(query).hint("a_1_b_1").explain();
+        //DBObject doc = collection.find(query).hint("a_1_b_1").explain();
+
+        BasicDBObject myHint = new BasicDBObject("a", 1).append("b", 1);
+        DBObject doc = collection.find(query).hint(myHint).explain();
+
 
         for(String s: doc.keySet()){
-            System.out.printf("%25s:%s\n",s, doc.get(s));
+            System.out.printf("%25s:%s\n", s, doc.get(s));
         }
     }
 }
