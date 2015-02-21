@@ -48,6 +48,13 @@
       <version>2.3.19</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.mongodb.morphia</groupId>
+      <artifactId>morphia</artifactId>
+      <!-- See https://github.com/mongodb/morphia/releases for the latest version -->
+      <version>0.109</version>
+    </dependency>
+
   </dependencies>
 
 

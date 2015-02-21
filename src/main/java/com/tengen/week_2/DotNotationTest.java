@@ -1,4 +1,4 @@
-package com.tengen;
+package com.tengen.week_2;
 
 import com.mongodb.*;
 
@@ -49,5 +49,25 @@ public class DotNotationTest {
             cursor.close();
         }
     }
+
+//    public static void main(String[] args) throws UnknownHostException {
+//        MongoClient client = new MongoClient();
+//        DB courseDB = client.getDB("students");
+//        DBCollection collection = courseDB.getCollection("grades");
+//
+//        //QueryBuilder builder = QueryBuilder.start("");
+//
+//        DBObject query = new BasicDBObject("type", "homework");
+//        DBCursor cursor = collection.find(query).sort(new BasicDBObject("student_id", 1).append("score",1));
+//
+//        boolean flag = true;
+//        Object id = 0;
+//        while(cursor.hasNext()){
+//            DBObject cur = cursor.next();
+//            collection.remove(new BasicDBObject("_id", cur.get("_id")));
+//            cursor.next();
+//            System.out.println(cur);
+//        }
+//    }
 
 }
